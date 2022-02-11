@@ -140,3 +140,6 @@ homework/Day028-31/Object Detection 程式導讀/weights/Ｗeights.pth
 homework/Day028-31/Object Detection 程式導讀/demo/ssd300_mAP_77.43_v2.pth
 homework/Day35_YOLO 細節理解 - 損失函數/models/pretrain/yolo_tiny.ckpt
 homework/Day37_YOLO 細節理解 - 網路架構程式碼解讀/models/pretrain/yolo_tiny.ckpt
+homework/Day039_YOLOv3/yolov3.weights
+homework/Day037_YOLO 細節理解 - 網路架構程式碼解讀/models/pretrain/yolo_tiny.ckpt
+homework/Day035_YOLO 細節理解 - 損失函數/models/pretrain/yolo_tiny.ckpt

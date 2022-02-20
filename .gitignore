@@ -145,3 +145,5 @@ homework/Day037_YOLO 細節理解 - 網路架構程式碼解讀/models/pretrain/
 homework/Day035_YOLO 細節理解 - 損失函數/models/pretrain/yolo_tiny.ckpt
 homework/Day042_kaggle_facial/test/test.csv
 homework/Day042_kaggle_facial/training/training.csv
+homework/Day043_kaggle_facial_detection_network/test.csv
+homework/Day043_kaggle_facial_detection_network/training.csv

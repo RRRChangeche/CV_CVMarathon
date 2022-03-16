@@ -1,6 +1,5 @@
 import cv2, os, glob
 import numpy as np
-from sympy import elliptic_f
 
 def onMouse(event, x, y, flags, param):
     global width, height, crop_size, curPos, cropArea
@@ -11,7 +10,6 @@ def onMouse(event, x, y, flags, param):
         if cropArea[0]<0 or cropArea[1]<0 or cropArea[2]>width or cropArea[3]>height: return    # if area is out of image size range, then return
         cropImage(*cropArea)
         drawCurPos(*curPos)
-
 
 def showImage(path):
     global width, height, files, index
@@ -58,10 +56,18 @@ def cropImage(x,y,w,h):
     cropImage = image[y:y+h, x:x+w]
     cv2.imwrite(os.path.join(cropped_folder, "crop_"+basename), cropImage)
 
+def listAllImages(path, name):
+    with open(os.path.join(path, name), "w") as f:
+        files = glob.glob(os.path.join(path, "*.jpg"))
+        for imgPath in files:
+            f.write(imgPath+"\r\n")
+
+
 # set path 
 cropped_folder = "images/cropped"
 images_folder = "images"
-files = glob.glob(images_folder+"/*.jpg")           
+files = glob.glob(images_folder+"/*.jpg")     
+listAllImages(cropped_folder, "train.txt")      
 
 # set parameter 
 index = 0

@@ -155,3 +155,5 @@ homework/Day044_kaggle_facial_detection_training/model_aug.h5
 homework/Day044_kaggle_facial_detection_training/model.h5
 homework/Day044_kaggle_facial_detection_training/best_weights.h5
 homework/Day044_kaggle_facial_detection_training/best_weights_augment.h5
+test_yolov4-tiny/yolov4-tiny.conv.29
+project/Dart_detection/yolov4-tiny.conv.29

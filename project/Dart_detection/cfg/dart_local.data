@@ -1,0 +1,10 @@
+classes= 5
+#train  = /content/Dart_detection/cfg/train.txt
+#valid  = /content/Dart_detection/cfg/val.txt
+#names = /content/Dart_detection/cfg/data/dart.names
+#backup = weights/
+train  = ./cfg/train.txt
+valid  = ./cfg/val.txt
+names = ./cfg/dart.names
+backup = ./backup_weight/
+eval=coco

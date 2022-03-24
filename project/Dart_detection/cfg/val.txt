@@ -1,0 +1,5 @@
+/content/drive/MyDrive/Colab_Notebooks/Dart_detection/yolo-train/crop_PXL_20220219_065454202.jpg
+/content/drive/MyDrive/Colab_Notebooks/Dart_detection/yolo-train/crop_PXL_20220219_065933695.jpg
+/content/drive/MyDrive/Colab_Notebooks/Dart_detection/yolo-train/crop_PXL_20220219_065954906.jpg
+/content/drive/MyDrive/Colab_Notebooks/Dart_detection/yolo-train/crop_PXL_20220219_070143360.jpg
+/content/drive/MyDrive/Colab_Notebooks/Dart_detection/yolo-train/crop_PXL_20220219_070149688.jpg

@@ -1,0 +1,5 @@
+./yolo-train/crop_PXL_20220219_065454202.jpg
+./yolo-train/crop_PXL_20220219_065933695.jpg
+./yolo-train/crop_PXL_20220219_065954906.jpg
+./yolo-train/crop_PXL_20220219_070143360.jpg
+./yolo-train/crop_PXL_20220219_070149688.jpg

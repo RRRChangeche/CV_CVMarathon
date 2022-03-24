@@ -1,0 +1,15 @@
+./yolo-train/crop_PXL_20220217_131953310.jpg
+./yolo-train/crop_PXL_20220217_132530498.jpg
+./yolo-train/crop_PXL_20220217_132746735.jpg
+./yolo-train/crop_PXL_20220217_132917779.jpg
+./yolo-train/crop_PXL_20220217_133104288.jpg
+./yolo-train/crop_PXL_20220217_133318279.jpg
+./yolo-train/crop_PXL_20220217_133552319.jpg
+./yolo-train/crop_PXL_20220217_134358369.jpg
+./yolo-train/crop_PXL_20220217_134511543.jpg
+./yolo-train/crop_PXL_20220219_064844252.jpg
+./yolo-train/crop_PXL_20220219_064938970.jpg
+./yolo-train/crop_PXL_20220219_065012621.jpg
+./yolo-train/crop_PXL_20220219_065146123.jpg
+./yolo-train/crop_PXL_20220219_065156547.jpg
+./yolo-train/crop_PXL_20220219_065248115.jpg

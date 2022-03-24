@@ -1,0 +1,10 @@
+classes= 5
+#train  = /content/Dart_detection/cfg/train.txt
+#valid  = /content/Dart_detection/cfg/val.txt
+#names = /content/Dart_detection/cfg/data/dart.names
+#backup = weights/
+train  = /content/drive/MyDrive/Colab_Notebooks/Dart_detection/cfg/train.txt
+valid  = /content/drive/MyDrive/Colab_Notebooks/Dart_detection/cfg/val.txt
+names = /content/drive/MyDrive/Colab_Notebooks/Dart_detection/cfg/dart.names
+backup = /content/drive/MyDrive/Colab_Notebooks/Dart_detection/backup_weight/
+eval=coco

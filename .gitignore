@@ -134,6 +134,10 @@ settings.json
 # CVMarathon
 sample
 answer
+images
+yolo-train
+yolo-val
+backup_weight
 homework/Day028/Object Detection 程式導讀/demo/ssd300_mAP_77.43_v2.pth
 homework/Day028/Object Detection 程式導讀/weights/Ｗeights.pth
 homework/Day028-31/Object Detection 程式導讀/weights/Ｗeights.pth
@@ -157,3 +161,6 @@ homework/Day044_kaggle_facial_detection_training/best_weights.h5
 homework/Day044_kaggle_facial_detection_training/best_weights_augment.h5
 test_yolov4-tiny/yolov4-tiny.conv.29
 project/Dart_detection/yolov4-tiny.conv.29
+project/Dart_detection/yolov4.conv.137
+project/Dart_detection/yolov4-tiny.h5
+project/Dart_detection/cfg/yolov4-tiny.conv.29

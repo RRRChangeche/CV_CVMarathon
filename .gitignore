@@ -164,3 +164,4 @@ project/Dart_detection/yolov4-tiny.conv.29
 project/Dart_detection/yolov4.conv.137
 project/Dart_detection/yolov4-tiny.h5
 project/Dart_detection/cfg/yolov4-tiny.conv.29
+*.png

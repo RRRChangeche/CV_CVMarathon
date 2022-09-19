@@ -19,6 +19,17 @@ def showImage(path):
     image = cv2.resize(image, (width, height))
     # put text
     cv2.putText(image, files[index], (0,20), fontFace=None, fontScale=0.5, color=(0,255,0), thickness=1)
+    cv2.putText(image, "[Mouse left-click]: crop ans save", (0,40), fontFace=None, fontScale=0.5, color=(0,255,0), thickness=1)
+    cv2.putText(image, "[Space]: Next image", (0,60), fontFace=None, fontScale=0.5, color=(0,255,0), thickness=1)
+    cv2.putText(image, "[+/-]: Zoom in/out", (0,80), fontFace=None, fontScale=0.5, color=(0,255,0), thickness=1)
+    cv2.putText(image, "[Esc]: Quit", (0,100), fontFace=None, fontScale=0.5, color=(0,255,0), thickness=1)
+    # check cropped
+    dirname = os.path.dirname(path)
+    filename = os.path.basename(path)
+    cropped_folder = os.path.join(dirname, "cropped")
+    cropped_file = os.path.join(cropped_folder, "crop_"+filename)
+    if os.path.exists(cropped_file):
+        cv2.putText(image, f"Already cropped at {cropped_file}", (0,120), fontFace=None, fontScale=0.5, color=(0,0,255), thickness=1)
     cv2.imshow("images", image)
     return image
 
@@ -87,15 +98,24 @@ while True:
     c = cv2.waitKey(10)
     if c == 27: # ESC - quit 
         break
-    elif c == 32: # space - next image
-        index += 1
+    elif c == 32: # Space - next image
+        # index += 1
+        # showImage(files[index])
+
+        # skip cropped
+        filename = os.path.basename(files[index])
+        cropped_file = os.path.join(cropped_folder, "crop_"+filename)
+        while os.path.exists(cropped_file) : 
+            index += 1
+            filename = os.path.basename(files[index])
+            cropped_file = os.path.join(cropped_folder, "crop_"+filename)
         showImage(files[index])
         
     # elif c != -1:
         # print(c)
-    if c == 61:
+    if c == 61: # + zoom in
         crop_size += 10
         drawCropArea(*curPos)
-    elif c == 45:
+    elif c == 45:   # - zoom out
         crop_size -= 10
         drawCropArea(*curPos)

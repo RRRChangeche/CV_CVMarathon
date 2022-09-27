@@ -30,7 +30,7 @@
 
 ### 下載darknet並編譯
 從darknet github頁面下載原始碼後編譯
-https://github.com/AlexeyAB/darkne
+https://github.com/AlexeyAB/darknet
 
 ### 編輯設定檔  
 在專案資料夾下新增參數資料夾(cfg)，共有五個設定檔需要編輯包括

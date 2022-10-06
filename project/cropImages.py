@@ -26,7 +26,7 @@ def showImage(path):
     # check cropped
     dirname = os.path.dirname(path)
     filename = os.path.basename(path)
-    cropped_folder = os.path.join(dirname, "cropped")
+    # cropped_folder = os.path.join(dirname, "cropped")
     cropped_file = os.path.join(cropped_folder, "crop_"+filename)
     if os.path.exists(cropped_file):
         cv2.putText(image, f"Already cropped at {cropped_file}", (0,120), fontFace=None, fontScale=0.5, color=(0,0,255), thickness=1)
@@ -75,16 +75,19 @@ def listAllImages(path, name):
 
 
 # set path 
-cropped_folder = "images/cropped"
+# cropped_folder = "images/cropped"
+cropped_folder = "cropped"
 images_folder = "images"
 files = glob.glob(images_folder+"/*.jpg")     
 listAllImages(cropped_folder, "train.txt")      
 
 # set parameter 
 index = 0
-ratio = 5
+# ratio = 3
+ratio = 3
 width, height = 0, 0
-crop_size = 400
+# crop_size = 400
+crop_size = 800
 curPos = (0,0)
 cropArea = (0,0,0,0)
 
@@ -99,17 +102,19 @@ while True:
     if c == 27: # ESC - quit 
         break
     elif c == 32: # Space - next image
-        # index += 1
-        # showImage(files[index])
-
-        # skip cropped
-        filename = os.path.basename(files[index])
-        cropped_file = os.path.join(cropped_folder, "crop_"+filename)
-        while os.path.exists(cropped_file) : 
-            index += 1
-            filename = os.path.basename(files[index])
-            cropped_file = os.path.join(cropped_folder, "crop_"+filename)
+        index += 1
+        index %= len(files)
         showImage(files[index])
+
+        # # skip cropped
+        # filename = os.path.basename(files[index])
+        # cropped_file = os.path.join(cropped_folder, "crop_"+filename)
+        # while os.path.exists(cropped_file) and index < len(files):
+        #     index += 1
+        #     filename = os.path.basename(files[index])
+        #     cropped_file = os.path.join(cropped_folder, "crop_"+filename)
+        # showImage(files[index])
+        # # end skip
         
     # elif c != -1:
         # print(c)
